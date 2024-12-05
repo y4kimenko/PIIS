@@ -1,0 +1,337 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  h1{
+    margin:0;
+  }
+  h2{
+    margin:0;
+  }
+  h3{
+    margin:0;
+  }
+  
+  p{
+    margin:0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  body {
+    min-width: 1200px;
+    font-family: Muller,Arial, sans-serif;
+    background-color: #F1F1F1;
+  }
+
+/*glob*/
+.list-reset{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 75px;
+}
+
+.container-information{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+body {
+    min-width: 320px;
+    font-weight: 400;
+    background-color: #fff;
+    margin: 0;
+}
+
+/*T-Shirts*/
+.section-title{
+font-size: 70px;
+  font-weight: 800;
+  line-height: 85px;
+  margin-bottom: 24px;
+}
+
+.shirts__list{
+    display: flex;
+    column-gap: 5%;
+    row-gap: 38px;
+    flex-wrap: wrap;
+}
+
+.shirts__item{
+    border: 5px solid #070761;
+    border-radius: 24px;
+    padding: 256px 42px 20px 42px;
+    background-color: #4b4b4d;
+}
+
+.shirts__name{
+    color: #070761;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.shirts__descr{
+    color: #7d7d81;
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+
+.shirts__button{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border: 5px solid #070761 ;
+    border-radius: 20px;
+    
+}
+
+.shirts__buttons{
+    display: flex;
+    gap:20px;
+}
+
+/*Header*/
+.header__container{
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo{
+    max-width: 85px;
+  }
+
+  .header__logo:focus{
+   outline: none;
+  }
+  .header__btn:hover path{
+    stroke:#3b7dd4;
+  }
+  .header__btn:hover rect{
+    fill:#3b7dd4;
+  }
+  
+  .header__logo:focus{
+    outline: none;
+  }
+  
+  .header__btn:focus-visible{
+    outline-offset: 5px;
+    outline: 2px solid #3434f8;
+  }
+  
+  .header__btn:active{
+    outline: none;
+  }
+  
+  .header__logo{
+    margin-right:auto;
+  }
+  
+  .nav__list{
+    display: flex;
+    margin-right: 85px;
+  }
+  
+  
+  
+  .nav__item:not(:last-child){
+    margin-right:85px;
+  }
+  
+  .nav__link{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .nav__link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 3px;
+    background-color: #1d1daa;
+    opacity:0;
+    transition: opacity 0.3s ease-in-out ;
+  }
+  
+  .nav__link:hover::after{
+    opacity: 1;
+  }
+  
+  .nav__link:focus{
+    outline: none;
+  }
+  .nav__link:focus-visible{
+    outline-offset: 5px;
+    outline: 2px solid #1d1daa;
+  }
+  
+  
+  
+  .nav__link:active::after{
+    opacity: 1;
+    background-color: #1d1daa;
+  }
+  
+  .nav__link:active{
+    color: #1d1daa;
+  }
+  
+  .header{
+    margin-bottom:95px;
+    padding: 14px 0;
+    background-color:#FFFFFF;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    box-shadow: 0px 5px 40px 0px #0000001A;
+  }
+
+  /*shirt-data*/
+  .shirt{
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .shirt__image{
+    border-radius: 24px;
+  }
+
+  .shirt__title{
+    font-size: 40px;
+  }
+
+  .shirt__descr{
+    font-size: 23px;
+  }
+
+  .shirt__price{
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .shirt__button__descr{
+    font-size: 23px;
+  }
+  
+  .shirt__button-side{
+    border: 1px solid black;
+    padding: 5px 9px;
+    border-radius: 3px;
+    color: white;
+    background-color: #1d1daa;
+    font-size: 18px;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  .shirt__button-side:not(:last-child){
+    margin-right: 10px;
+  }
+
+  .shirt__button-side:hover{
+    background-color: #0a0a0a;
+  }
+
+  .shirt__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:50px 0;
+    max-width: 600px;
+  }
+
+  .shirt{
+    display: flex;
+    column-gap: 5%;
+    margin: 0 auto;
+  }
+
+  .shirt__color{
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  .active{
+    background-color: #7d7d81;
+  }
+
+  #quickViewWindow{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border: 2px solid #070761;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+#closeQViewWindow{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #070761;
+    border: none;
+    font-size: 30px;
+}
+.quickViewImgDiv{
+    width: 40%;
+ 
+}
+.quickViewImgDiv img{
+    width: 100%;
+    height: 82%;
+    object-fit: contain;
+    border-radius: 24px;
+}
+.quickViewData{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nameTxt{
+    color: #070761;
+}
